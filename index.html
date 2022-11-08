@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <span class="margin absolute">Margin 30px</span>
+    <span class="border absolute">Border 5px</span>
+    <span class="padding absolute">Padding 20px</span>
+    <span class="content absolute">Height 50px Width 180px</span>
+    <div class="element_1">
+        <span class="title">Element 1</span>
+    </div>
+    <br>
+    <p class="deccription">Стандартная модель
+        <span class="code">box-sizing: content-box<span>
+    </p>
+    <hr>
+    <p class="description">Отличие margin от padding и влияние на размеры блока</p>
+    <ul class="description">
+        <li class="description">Margin - внешний слой, заключающий в себе содержимое, внутренний отступ и рамки,
+            представляет собой пространство между текущим и другими элементами. Его размер контролируется с
+            помощью margin и связанных свойств.</li>
+        <li class="description">Padding - внутренний отступ, располагается вокруг содержимого в виде пустого пространства;
+            Размер контролируется с помощью padding и связанных свойств.</li>
+        <li class="description">Border - рамка оборачивает содержимое и внутренние отступы.
+            Её размер и стиль можно контролировать с помощью border и связанных свойств.</li>
+        <li class="description">Содержимое: область, где отображается ваш контент, размер которой можно изменить с помощью таких свойств,
+            как width и height.</li>
+    </ul>
+    <hr>
+    <p class="decription">
+        Альтернативные модели
+    </p>
+    <p class="decription">
+        <span class="code">box-sizing: border-box<span>
+    </p>
+    <div class="element_1 border-box">
+        <span class="title">Element 2</span>
+    </div>
+    <p class="decription">
+        <span class="code">box-sizing: padding-box<span>
+    </p>
+    <div class="element_1 padding-box">
+        <span class="title">Element 3</span>
+    </div>
+    <p class="description">
+        padding-box только в FireFox работал, сейчас точных сведений о работе - нет
+    </p>
+    <hr>
+        <p class="description">
+            Все свойства для содержимого оставались прежними, изменялся только способ расчета
+        </p>
+    <hr>
+    <p class="description">
+        Поглощение отступов <br>
+        Отступы margin-top и margin-bottom иногда объединяются в один,
+        с размером равным наибольшему из них (или размеру одного, если они равны).
+        Это поведение известно как схлопывание внешних отступов (margin collapsing).<br>
+        <span class="attention">Отступы плавающих и абсолютно позиционированных
+        элементов никогда не схлопываются.</span>
+    </p>
+    <ul class="description">
+        <li class="description relative">
+            Соседние элементы (siblings)
+
+        <div class="element_2">
+            <span class="title">Element 4</span>
+        </div>
+        <div class="element_2">
+            <span class="title">Element 4</span>
+        </div>
+        <div class="margin-col_1 absolute" style="background-color: pink; height: 20px; width: 130px; bottom: 100px; left: 0px;">Отступ в сумме 20px</div>
+        <p class="description">Реальный отступ 10px</p>
+        </li>
+        <li class="description relative">
+            Родительский и первый/последний дочерние элементы
+
+            <div class="element_2" style="display: block; padding: 0; margin: 20px 0; border: none;">
+                <span class="title" style="margin-top: 20px; display: block;">Element 4</span>
+                <span class="title" style="margin-bottom: 20px; display: block;">Element 4</span>
+            </div>
+            <div class="margin-col_1 absolute" style="background-color: pink; height: 40px; width: 130px; bottom: 45px; left: 170px;">Отступ в сумме 40px снизу и сверху</div>
+            <p class="description">Реальный общий отступ 20px, снизу и сверху как от родительского элемента, так и от дочерних</p>
+        </li>
+        <li class="description relative">
+            Пустые блоки
+            <p class="description">Реальный отступ 0, cхлопнулся снизу с этим текстом</p>
+            <div class="element_2" style="margin: 20px 0; padding: 0; border: none";></div>
+            <p class="description">Реальный отступ 0, cхлопнулся снизу с этим текстом</p>
+            <div class="margin-col_1 absolute" style="background-color: pink; height: 40px; width: 130px; bottom: 20px; left: 0px;">Отступ в сумме 40px</div>
+        </li>
+    </ul>
+    <hr>
+    <p class="description">
+        Псевдоэлементы
+    </p>
+    <p class="description">
+        Псевдоэлемент в CSS — это ключевое слово, добавляемое к селектору, которое позволяет стилизовать определённую часть выбранного элемента.
+    </p>
+    <ul class="description">
+        <li class="description li">
+            <span class="code">::after</span>-После элемента</li>
+        <li class="description li">
+            <span class="code">::before</span>-Перед элементом</li>
+        <li class="description li">
+            <span class="code">::cue</span>-Стили титров в медиа плеере</li>
+        <li class="description li">
+            <span class="code">::first-letter</span>-Первое слов в параграфе</li>
+        <li class="description li">
+            <span class="code">::first-line</span>-Первая строка в параграфе</li>
+        <li class="description li">
+            <span class="code">::selection</span>-Выделенное пользователем содержимое</li>
+        <li class="description li">
+            <span class="code">::slotted</span>-Выделенный слот?</li>
+        <li class="description li">
+            <span class="code">::backdrop</span>-Задняя часть на открытых полноэкранно элементах</li>
+        <li class="description li">
+            <span class="code">::placeholder</span>-Заполнитель в textarea и input</li>
+        <li class="description li">
+            <span class="code">::marker</span>-Метка для li и summary</li>
+        <li class="description li">
+            <span class="code">::spelling-error</span>-Ошибка произношения</li>
+        <li class="description li">
+            <span class="code">::grammar-error</span>-Ошибка написания</li>
+    </ul>
+</body>
+</html>
