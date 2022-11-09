@@ -127,5 +127,54 @@
         <li class="description li">
             <span class="code">::grammar-error</span>-Ошибка написания</li>
     </ul>
+    <hr>
+    <p class="description">
+        Нормальный поток <br><br>
+        Это система, посредством которой элементы
+        размещаются внутри окна просмотра браузера.
+    </p>
+    <p class="description">
+        Для блочных элементов, направление в котором будет добавляться новый элемент,
+        сверху -> вниз, на следующей строке, в зависимости от вложенности элементов.
+    </p>
+    <p class="description">
+        Для строчных элементов, направление в котором будет добавляться новый элемент,
+        слева -> направо, в зависимости от ширины блока, в котором они находятся, при недостаточном месте
+        будут смещаться на новую строку.
+    </p>
+    <p class="description">
+        Для блочно-строчных элементов, направление в котором будет добавляться новый элемент, такое же
+        как и у строчного, но поведение отступов - блочное
+    </p>
+    <hr>
+    <p class="description">Блочные элементы</p>
+    <div class="element_1">
+        <span class="title">Block</span>
+    </div>
+    <div class="element_1">
+        <span class="title">Block</span>
+    </div>
+    <hr>
+    <p class="description">
+        Строчные элементы
+    </p>
+    <span class="title">String</span>
+    <span class="title">String</span>
+    <hr>
+    <p class="description">
+        Строчно-блочные элементы
+    </p>
+    <span class="title" style="display: inline-block; padding: 5px">String</span>
+    <span class="title" style="display: inline-block; padding: 5px">String</span>
+    <hr>
+    <p class="description">Обтекание</p>
+    <div class="container">
+        <div class="box"></div>
+        <p class="description">float — элемент с установленным float (элемент <span class="code">&lt;div&gt;</span>  в данном случае)
+        изымается из нормального потока документа и крепится с левой стороны от родительского контейнера
+        (элемент <span class="code">&lt;container&gt;</span> в данном случае). Любой контент, который следует ниже за обтекаемым элементом в макете при нормальном
+        потоке теперь будет оборачивать его вокруг, заполняя пространство справа от него начиная на той же высоте что и вершина
+        обтекаемого элемента. Там он остановится</p>
+    </div>
 </body>
 </html>
