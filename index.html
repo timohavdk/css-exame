@@ -16,7 +16,7 @@
     </div>
     <br>
     <p class="deccription">Стандартная модель
-        <span class="code">box-sizing: content-box<span>
+        <span class="code">box-sizing: content-box</span>
     </p>
     <hr>
     <p class="description">Отличие margin от padding и влияние на размеры блока</p>
@@ -36,13 +36,13 @@
         Альтернативные модели
     </p>
     <p class="decription">
-        <span class="code">box-sizing: border-box<span>
+        <span class="code">box-sizing: border-box</span>
     </p>
     <div class="element_1 border-box">
         <span class="title">Element 2</span>
     </div>
     <p class="decription">
-        <span class="code">box-sizing: padding-box<span>
+        <span class="code">box-sizing: padding-box</span>
     </p>
     <div class="element_1 padding-box">
         <span class="title">Element 3</span>
@@ -220,5 +220,195 @@
             </li>
         </ul>
     </p>
+	<hr>
+	<p class="description">Media</p>
+	<p class="description">
+		At-правило @media в CSS связывает набор операторов, ограниченных фигурными скобками, в CSS блок, применяется
+		при соблюдении условия одного или нескольких медиавыражений.
+	</p>
+	<p class="description">
+		Медиавыражения используются в тех случаях , когда нужно применить разные CSS-стили,
+		для разных устройств по типу отображения (например: для принтера, монитора или смартфона),
+		а также конкретных характеристик устройства (например: ширины окна просмотра браузера),
+		или внешней среды (например: внешнее освещение). Учитывая огромное количество подключаемых
+		к интернету устройств, медиавыражения являются очень важным инструментом при создании
+		веб-сайтов и приложений, которые
+		будут правильно работать на всех доступных устройствах, которые есть у ваших пользователей.
+	</p>
+	<div class="flex-block">
+		Это блок разный в зависимости от разрешения экрана
+	</div>
+	<p class="description">
+		Свойства для media:
+	</p>
+	<ul class="description">
+		<p class="description">Тип носителя</p>
+		<li class="description">all - все типы экранов</li>
+		<li class="description">print - для страничной печати</li>
+		<li class="description">screen - цветные экраны мониторов</li>
+		<li class="description">speech - синтезаторы речи</li>
+	</ul>
+	<p class="description">
+		Свойства для media:
+	</p>
+	<ul class="description">
+		<p class="description">Характеристики носителя</p>
+		<li class="description">width - ширина области просмотра</li>
+		<li class="description">height - высота области просмотра</li>
+		<li class="description">aspect-ratio - отношение ширины к высоте</li>
+		<li class="description">resolution - расширение экрана (dpi/dpcm)</li>
+		<li class="description">color - количество бит на каждый из цветовых компонентов устройства вывода</li>
+		<li class="description">color-index - количество записей в таблице подстановки цветов</li>
+		<li class="description">monochrome - количество битов на пиксель монохромного устройства</li>
+		<li class="description">-webkit-device-pixel-ratio - количество физических пикселей устройства на каждый CSS-пиксель.</li>
+		<p class="description">С приставками min/max</p>
+	</ul>
+	<p class="description">Пример записи из кода:</p>
+	<pre class="code">
+@media screen and (min-width: 320px) {
+	.flex-block {
+		min-width: 300px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.flex-block {
+		width: 800px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.flex-block {
+		width: 1000px;
+	}
+}
+	</pre>
+	<hr>
+	<p class="description">
+		initial-scale
+	</p>
+	<p class="description">
+		Управляет уровнем масштабирования при первой загрузке страницы.
+		<span class="attention">Минимум: 0.1. Максимум: 10. По умолчанию: 1.</span>
+		Отрицательные значения: игнорируются. <br>
+		minimum- на сколько можно уменьшать масштаб страницы <br>
+		maximum- на сколько можно увеличивать масштаб страницы
+	</p>
+	<p class="description">
+		Соотношение пикселей по умолчанию зависит от плотности отображения.
+		Для дисплея с плотностью менее 200 точек на дюйм это соотношение равно 1,0.
+		Для дисплеев с плотностью от 200 до 300 точек на дюйм это соотношение равно 1,5.
+		Для дисплеев с плотностью более 300 точек на дюйм это соотношение равно
+		целому число (density/150dpi)
+	</p>
+	<p class="description">На данной странице initial-scale=1</p>
+	<hr>
+	<p class="description">Flex</p>
+	<p class="description">Благодаря Flexbox проще создавать сложные, комплексные интерфейсы, где мы с легкостью можем
+		переопределять направление и выравнивание элементов, создавать адаптивные табличные представления. Кроме того,
+		Flexbox довольно прост в использовании. Единственная проблема, которая может возникнуть при его применении, - это
+		кроссбраузерность. Например, в Internet Explorer поддержка Flexbox и то частичная появилась только в последней
+		версии - IE11. В то же время все современные браузеры, в том числе Microsoft Edge, Opera, Google Chrome, Safari,
+		Firefox, имеют полную поддержку данного модуля.</p>
+	<p class="description">Основные понятия</p>
+	<img src="flexbox21.png" alt="основные элементы flex-container">
+	<p class="description">
+		Одно из ключевых понятий представляет main axis или центральная ось.
+		Это условная ось во flex-контейнере, вдоль которой позиционируются flex-элементы. <br>
+
+		Main axis и cross axiss в flexbox и css 3
+		Элементы в контейнере могут располагаться по горизонтали в виде строки
+		и по вертикали в виде столбца. В зависимости от типа расположения будет
+		меняться и центральная ось. Если расположение в виде строки, то центральная
+		ось направлена горизонтально слева направо. Если расположение в виде столбца,
+		то центральная ось направлена вертикально сверху вниз. <br>
+
+		Термины main start и main end описывают соответственно начало и конец
+		центральной оси, а расстояние между между ними обозначается как main size. <br>
+
+		Кроме основной оси существует также поперечная ось или cross axis. Она
+		перпендикулярна основной. При расположении элементов в виде строки cross
+		axis направлена сверху вниз, а при расположении в виде столбца она направлена
+		слева направо. Начало поперечной оси обозначается как cross start, а ее конец
+		- как cross end. Расстояние между ними описывается термином cross size. <br>
+	</p>
+	<hr>
+	<p class="description">Пример flex-direction (Направление в контейнере):</p>
+	<p class="description">Row</p>
+	<div class="flex">
+		<div class="container_1">
+
+		</div>
+		<div class="container_2">
+
+		</div>
+		<div class="container_3">
+
+		</div>
+	</div>
+	<p class="description">Column</p>
+	<div class="flex" style="flex-direction: column">
+		<div class="container_1">
+
+		</div>
+		<div class="container_2">
+
+		</div>
+		<div class="container_3">
+
+		</div>
+	</div>
+	<p class="description">Row-reverse</p>
+	<div class="flex" style="flex-direction: row-reverse">
+		<div class="container_1">
+
+		</div>
+		<div class="container_2">
+
+		</div>
+		<div class="container_3">
+
+		</div>
+	</div>
+	<p class="description">Column-reverse</p>
+	<div class="flex" style="flex-direction: column-reverse">
+		<div class="container_1">
+
+		</div>
+		<div class="container_2">
+
+		</div>
+		<div class="container_3">
+
+		</div>
+	</div>
+	<hr>
+	<p class="description">Пример flex-wrap (Перенос содержимого на новую строку или столбец):</p>
+	<p class="description" >Row</p>
+	<div class="flex" style="flex-wrap: wrap; width: 200px">
+		<div class="container_1">
+
+		</div>
+		<div class="container_2">
+
+		</div>
+		<div class="container_3">
+
+		</div>
+	</div>
+	<p class="description" >Column</p>
+	<div class="flex" style="flex-direction: column; flex-wrap: wrap; height: 180px">
+		<div class="container_1">
+
+		</div>
+		<div class="container_2">
+
+		</div>
+		<div class="container_3">
+
+		</div>
+	</div>
+	<hr>
+
 </body>
 </html>
