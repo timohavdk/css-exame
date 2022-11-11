@@ -28,7 +28,8 @@
             Размер контролируется с помощью padding и связанных свойств.</li>
         <li class="description">Border - рамка оборачивает содержимое и внутренние отступы.
             Её размер и стиль можно контролировать с помощью border и связанных свойств.</li>
-        <li class="description">Содержимое: область, где отображается ваш контент, размер которой можно изменить с помощью таких свойств,
+        <li class="description">Содержимое: область, где отображается ваш контент, размер которой можно изменить
+            с помощью таких свойств,
             как width и height.</li>
     </ul>
     <hr>
@@ -73,7 +74,8 @@
         <div class="element_2">
             <span class="title">Element 4</span>
         </div>
-        <div class="margin-col_1 absolute" style="background-color: pink; height: 20px; width: 130px; bottom: 100px; left: 0px;">Отступ в сумме 20px</div>
+        <div class="margin-col_1 absolute" style="background-color: pink; height: 20px; width: 130px; bottom: 100px; left: 0px;">
+            Отступ в сумме 20px</div>
         <p class="description">Реальный отступ 10px</p>
         </li>
         <li class="description relative">
@@ -83,7 +85,8 @@
                 <span class="title" style="margin-top: 20px; display: block;">Element 4</span>
                 <span class="title" style="margin-bottom: 20px; display: block;">Element 4</span>
             </div>
-            <div class="margin-col_1 absolute" style="background-color: pink; height: 40px; width: 130px; bottom: 45px; left: 170px;">Отступ в сумме 40px снизу и сверху</div>
+            <div class="margin-col_1 absolute" style="background-color: pink; height: 40px; width: 130px; bottom: 45px; left: 170px;">
+                Отступ в сумме 40px снизу и сверху</div>
             <p class="description">Реальный общий отступ 20px, снизу и сверху как от родительского элемента, так и от дочерних</p>
         </li>
         <li class="description relative">
@@ -91,7 +94,8 @@
             <p class="description">Реальный отступ 0, cхлопнулся снизу с этим текстом</p>
             <div class="element_2" style="margin: 20px 0; padding: 0; border: none";></div>
             <p class="description">Реальный отступ 0, cхлопнулся снизу с этим текстом</p>
-            <div class="margin-col_1 absolute" style="background-color: pink; height: 40px; width: 130px; bottom: 20px; left: 0px;">Отступ в сумме 40px</div>
+            <div class="margin-col_1 absolute" style="background-color: pink; height: 40px; width: 130px; bottom: 20px; left: 0px;">
+                Отступ в сумме 40px</div>
         </li>
     </ul>
     <hr>
@@ -99,7 +103,8 @@
         Псевдоэлементы
     </p>
     <p class="description">
-        Псевдоэлемент в CSS — это ключевое слово, добавляемое к селектору, которое позволяет стилизовать определённую часть выбранного элемента.
+        Псевдоэлемент в CSS — это ключевое слово, добавляемое к селектору, которое позволяет стилизовать
+        определённую часть выбранного элемента.
     </p>
     <ul class="description">
         <li class="description li">
@@ -171,12 +176,14 @@
     <div class="container">
         <div class="box"></div>
         <div class="box" style="float: left"></div>
-        <p class="description">float — элемент с установленным float (элемент <span class="code">&lt;div&gt;</span>  в данном случае)
+        <p class="description">float — элемент с установленным float (элемент <span class="code">&lt;div&gt;</span> в данном случае)
         изымается из нормального потока документа и крепится с левой стороны от родительского контейнера
-        (элемент <span class="code">.container</span> в данном случае). Любой контент, который следует ниже за обтекаемым элементом в макете при нормальном
+        (элемент <span class="code">.container</span> в данном случае). Любой контент, который следует
+            ниже за обтекаемым элементом в макете при нормальном
         потоке теперь будет оборачивать его вокруг, заполняя пространство справа от него начиная на той же высоте что и вершина
         обтекаемого элемента. Там он остановится. <br>Используя свойство
-        <span class="code">clear: both</span> можно сделать границу контейнера, включающей в себя float блок, т.к. его действие будет отменяться этим css свойством</p>
+        <span class="code">clear: both</span> можно сделать границу контейнера, включающей в себя
+            float блок, т.к. его действие будет отменяться этим css свойством</p>
         <div style="clear: both"></div>
     </div>
     <hr>
@@ -189,7 +196,8 @@
     </div>
     <p class="description">
         Визуально переносит элемент на новое место.
-        Новое место вычисляется по координатам left/top/right/bottom относительно ближайшего позиционированного родителя. Если такого родителя нет, то им считается окно.
+        Новое место вычисляется по координатам left/top/right/bottom относительно ближайшего
+        позиционированного родителя. Если такого родителя нет, то им считается окно.
         Ширина элемента по умолчанию устанавливается по содержимому.
         Можно указать противоположные границы left/right (top/bottom). Элемент растянется.
         Окружающие элементы заполняют освободившееся место
@@ -408,7 +416,662 @@
 
 		</div>
 	</div>
-	<hr>
+    <p class="description" >Row wrap-revers</p>
+    <div class="flex" style="flex-wrap: wrap-reverse; width: 200px">
+        <div class="container_1">
 
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <p class="description" >Column wrap-revers</p>
+    <div class="flex" style="flex-direction: column; flex-wrap: wrap-reverse; height: 180px">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+	<hr>
+    <p class="ddescription">flex-flow</p>
+    <p class="ddescription">Свойство flex-flow позволяет установить значения сразу для обоих свойств flex-direction и flex-wrap</p>
+    <hr>
+    <p class="description">order</p>
+    <p class="desription">
+        Свойство order позволяет установить группу для flex-элемента, позволяя тем самым
+        переопределить его позицию внутри flex-контейнера. В качестве
+        значения свойство принимает числовой порядок группы. К одной группе
+        может принадлежать несколько элементов.
+        Например, элементы в группе 0 располагаются перед элементами с группой 1,
+        а элементы с группой 1 располагаются перед элементами с группой 2 и так
+        далее.
+    </p>
+    <p class="description" >Row</p>
+    <div class="flex" >
+        <div class="container_1" style="order: 2">
+
+        </div>
+        <div class="container_2" style="order: 0">
+
+        </div>
+        <div class="container_3" style="order: 1">
+
+        </div>
+    </div>
+    <p class="description" >Column</p>
+    <div class="flex" style="flex-direction: column">
+        <div class="container_1" style="order: 1">
+
+        </div>
+        <div class="container_2" style="order: 2">
+
+        </div>
+        <div class="container_3" style="order: 0">
+
+        </div>
+    </div>
+    <hr>
+    <p class="description">Выравнивание элементов</p>
+    <hr>
+    <p class="description">
+        justify-content <br>
+        ыравнивает элементы вдоль основной оси - main axis
+        (при расположении в виде строки по горизонтали, при
+        расположении в виде столбца - по вертикали) и принимает
+        следующие значения:
+    </p>
+    <ul class="description">
+        <li class="description">
+            flex-start (по умолчанию) - первый элемент выравнивается по левому
+            краю контейнера(при расположении в виде строки) или по верху
+            (при расположении в виде столбца), за ним располагается второй
+            элемент и так далее.
+        </li>
+        <li class="description">flex-end - противоположность flex-start</li>
+        <li class="description">center - элементы выравниваются по центру</li>
+        <li class="description">space-between - если в стоке только один
+            элемент или элементы выходят за границы flex-контейнера,
+            то данное значение аналогично flex-start. В остальных случаях
+            первый элемент выравнивается по левому краю (при расположении
+            в виде строки) или по верху (при расположении в виде столбца),
+            а последний элемент - по правому краю контейнера (при расположении
+            в виде строки) или по низу (при расположении в виде столбца). Все
+            оставшееся пространство между ними равным образом распределяется
+            между остальными элементами</li>
+        <li class="description">space-around: если в
+            строке только один элемент или элементы выходят
+            за пределы контейнера, то его действие аналогично
+            значению center. В ином случае элементы равным образом
+            распределяют пространство между левым и правым краем контейнера,
+            а расстояние между первым и последним элементом и границами
+            контейнера составляет половину расстояния между элементами.</li>
+    </ul>
+    <div class="flex" style="border: 2px solid grey; width: 700px; justify-content: flex-start">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex" style="border: 2px solid grey; width: 700px; justify-content: flex-end">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex" style="border: 2px solid grey; width: 700px; justify-content: center">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex" style="border: 2px solid grey; width: 700px; justify-content: space-between">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex" style="border: 2px solid grey; width: 700px; justify-content: space-around">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <p class="description">
+        Для направления колонки, выравнивание идёт по ее главное оси (Y)
+    </p>
+    <hr>
+    <p class="description">align-items <br>
+        также выравнивает элементы, но уже по поперечной оси (cross axis)
+        (при расположении в виде строки по вертикали, при расположении в виде
+        столбца - по горизонтали). Это свойство может принимать следующие значения:</p>
+    <ul class="description">
+        <li class="description">stretch - значение по умолчанию, при котором flex-элементы
+            растягиваются по всей высоте (при расположении в строку) или по всей ширине
+            (при расположении в столбик) flex-контейнера</li>
+        <li class="description">flex-start - элементы выравниваются по верхнему краю
+            (при расположении в строку) или по левому краю (при расположении в столбик)
+            flex-контейнера</li>
+        <li class="description">flex-end: элементы выравниваются по нижнему краю
+            (при расположении в строку) или по правому краю (при расположении в столбик)
+            flex-контейнера
+        </li>
+        <li class="description">center: элементы выравниваются по центру flex-контейнера
+        </li>
+        <li class="description">baseline: элементы выравниваются в соответствии со своей базовой линией</li>
+    </ul>
+    <div class="flex" style="border: 2px solid grey; width: 700px; align-items: stretch">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex" style="border: 2px solid grey; width: 700px; align-items: flex-start">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex" style="border: 2px solid grey; width: 700px; align-items: flex-end">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex" style="border: 2px solid grey; width: 700px; align-items: center">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex" style="border: 2px solid grey; width: 700px; height: 150px; align-items: baseline">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <hr>
+    <p class="description">
+        align-self <br>
+        Свойство align-self позволяет
+        переопределить значение свойства align-items для одного элемента.
+        Оно может принимать все те же значения плюс значение "auto" (значение по умолчанию, при котором элемент получает
+        значение от свойства align-items, которое определено в flex-контейнере. Если в
+        контейнере такой стиль не определен, то применяется значение stretch.)
+    </p>
+    <hr>
+    <p class="description">
+        align-content <br>
+        Свойство управляет выравниванием рядов (строк и столбцов)
+        во flex-контейнере и поэтому применяется, если свойство
+        flex-wrap имеет значение wrap или wrap-reverse. Свойство
+        align-content может иметь следующие значения:
+    </p>
+    <ul class="description">
+        <li class="description">
+            stretch (значение по умолчанию) - строки (столбцы) растягиваются, занимая все свободное место
+        </li>
+        <li class="description">
+            flex-start - строки (столбцы) выравниваются по началу контейнера (для строк - это верхний
+            край, для столбцов - это левый край контейнера)
+        </li>
+        <li class="description">
+            flex-end - строки (столбцы) выравниваются по концу контейнера (строки - по нижнему краю,
+            столбцы - по правому краю)
+        </li>
+        <li class="description">
+            center - строки (столбцы) позиционируются по центру контейнера
+        </li>
+        <li class="description">
+            space-between - строки (столбцы) равномерно распределяются по контейнеру, а между ними
+            образуются одинаковые отступы. Если же имеющегося в контейнере места недостаточно, то действует аналогично значению flex-start
+        </li>
+        <li class="description">
+            space-around - строки (столбцы) равным образом распределяют пространство контейнера,
+            а растояние между первой и последней строкой (столбцом) и границами контейнера составляет
+            половину расстояния между соседними строками (столбцами).
+        </li>
+    </ul>
+    <div class="flex"
+         style="border: 2px solid grey;
+         width: 700px; height: 300px;
+         flex-wrap: wrap;
+         align-content: stretch">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex"
+         style="border: 2px solid grey;
+         width: 700px; height: 300px;
+         flex-wrap: wrap;
+         align-content: flex-start">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex"
+         style="border: 2px solid grey;
+         width: 700px; height: 300px;
+         flex-wrap: wrap;
+         align-content: flex-end">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex"
+         style="border: 2px solid grey;
+         width: 700px; height: 300px;
+         flex-wrap: wrap;
+         align-content: center">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex"
+         style="border: 2px solid grey;
+         width: 700px; height: 300px;
+         flex-wrap: wrap;
+         align-content: space-between">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <div class="flex"
+         style="border: 2px solid grey;
+         width: 700px; height: 300px;
+         flex-wrap: wrap;
+         align-content: space-around">
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+        <div class="container_1">
+
+        </div>
+        <div class="container_2">
+
+        </div>
+        <div class="container_3">
+
+        </div>
+    </div>
+    <hr>
+    <p class="description">
+        Управление элементами. flex-basis, flex-shrink и flex-grow
+        Кроме свойств, устанавливающих выравнивание элементов относительно
+        границ flex-контейнера, есть еще три свойства, которые позволяют
+        управлять элементами:
+    </p>
+    <ul class="description">
+        <li class="description">flex-basis - определяет начальный размер flex-элемента</li>
+        <li class="description">flex-shrink: определяет, как flex-элемент будет уменьшаться относительно
+            других flex-элементов во flex-контейнере</li>
+        <li class="description">flex-grow: определяет, как flex-элемент будет увеличиваться относительно
+            других flex-элементов во flex-контейнере</li>
+    </ul>
+    <p class="description">
+        flex-basis
+    </p>
+    <ul class="description">
+        <li class="description">auto - начальный размер flex-элемента устанавливается
+            автоматически</li>
+        <li class="description">content: размер flex-элемента определяется по его
+            содержимому, в
+            то же время это значение поддерживается не всеми современными
+            браузерами, поэтому
+            его пока стоит избегать</li>
+        <li class="description">числовое значение: мы можем установить
+            конкретное числовое значение для размеров элемента</li>
+    </ul>
+    <div class="flex" style="border: 2px solid grey; width: 700px; align-items: center; justify-content: center">
+        <div class="container_1" style="flex-basis: 200px">
+
+        </div>
+        <div class="container_2" style="flex-basis: 200px">
+
+        </div>
+        <div class="container_3" style="flex-basis: 200px">
+
+        </div>
+    </div>
+    <p class="description">flex-shrink</p>
+    <p class="description">Если flex-контейнер имеет недостаточно места для
+        размещения элемента, то дальнейшее поведение этого элемента мы можем
+        определить с помощью свойства flex-shrink. Оно указывает, как элемент
+        будет усекаться относительно других элементов. В качестве значения свойство
+        принимает число. По умолчанию его значение 1.</p>
+    <div class="flex" style="border: 2px solid grey; width: 400px; align-items: center; justify-content: center">
+        <div class="container_1" style="flex-basis: 200px; flex-shrink: 1; width: 0">
+
+        </div>
+        <div class="container_2" style="flex-basis: 200px; flex-shrink: 2; width: 0">
+
+        </div>
+        <div class="container_3" style="flex-basis: 200px; flex-shrink: 3; width: 0">
+
+        </div>
+    </div>
+    <p class="description">flex-grow</p>
+    <p class="description">управляет расширением элементов, если во
+        flex-контейнере есть дополнительное место. Данное свойство
+        во многом похоже на свойство flex-shrink за тем исключением,
+        что работает в сторону увеличения элементов. По умолчанию свойство flex-grow равно 0.</p>
+    <div class="flex" style="border: 2px solid grey; width: 750px; align-items: center; justify-content: center">
+        <div class="container_1" style="flex-basis: 200px; flex-shrink: 1; flex-grow: 0;">
+
+        </div>
+        <div class="container_2" style="flex-basis: 200px; flex-shrink: 2; flex-grow: 1;">
+
+        </div>
+        <div class="container_3" style="flex-basis: 200px; flex-shrink: 3; flex-grow: 2;">
+
+        </div>
+    </div>
+    <hr>
+    <p class="description">Grid</p>
+    <p class="description">
+        Grid Layout представляет специальный модуль CSS3,
+        который позволяет позиционировать элементы в виде сетки
+        или таблицы. Как и Flexbox, Grid Layout представляет гибкий
+        подход к компоновке элементов, только если flexbox размещает
+        вложенные элементы в одном направлении - по горизонтали в виде
+        столбиков или по вертикали в виде строк, то Grid позиционирует
+        элементы сразу в двух направлениях - в виде строк и столбцов,
+        образуя тем самым таблицу.
+    </p>
+    <div class="grid">
+        <div class="container_1 width"></div>
+        <div class="container_1 width"></div>
+        <div class="container_1 width"></div>
+        <div class="container_1 width"></div>
+        <div class="container_1 width"></div>
+    </div>
+    <hr>
+    <p class="description">
+        Строки и столбцы
+    </p>
+    <ul class="description">
+        <li class="description">grid-template-columns: настраивает столбцы</li>
+        <li class="description">grid-template-rows: настраивает строки</li>
+    </ul>
+    <div class="grid" style="grid-template-columns: 80px 80px; grid-template-rows: 80px 80px">
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+    </div>
+    <hr>
+    <p class="description">
+        Повторение строк и столбцов
+    </p>
+    <ul class="description">
+        <li class="description">Если столбцов и(или) строк много
+            и они имеют одинаковые размеры, то есть смыл использовать
+            специальную функцию repeat(), которая позволит настроить
+            строки и столбцы. Так, в примере выше повторяется определение
+            одинаковых строк и столбцов в grid-контейнере:</li>
+    </ul>
+    <div class="grid" style="grid-template-columns: repeat(2, 80px); grid-template-rows: repeat(2, 80px)">
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+    </div>
+    <hr>
+    <p class="description">
+        Свойство grid
+        Свойство grid объединяет свойства
+        grid-template-rows и grid-template-columns
+        и разом позволяет задать настройки для строк и
+        столбцов в следующем формате: <br>
+        <span class="code">grid: grid-template-rows / grid-template-columns;</span>
+    </p>
+    <hr>
+    <p class="description">
+        Отступы между столбцами и строками
+    </p>
+    <ul class="description">
+        <li class="description">Для создания отступов между столбцами
+            и строками применяются свойства grid-column-gap и
+            grid-row-gap соответственно, gap - влияет на обя свойства</li>
+    </ul>
+    <div class="grid" style="grid-template-columns: repeat(2, 80px); grid-template-rows: repeat(2, 80px); gap: 20px">
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+    </div>
+    <hr>
+    <p class="description">
+        Позиционирование элементов
+    </p>
+    <ul class="description">
+        <li class="description">Грид представляет
+            собой набор ячеек, которые образуются на пересечении
+            столбцов и строк. Но сами строки и столбцы образуются
+            с помощью grid-линий, которые рассекают грид по вертикали
+            и горизонтали:</li>
+        <img src="grid20.png" alt="положение сетки" width="300px">
+        <ul class="description">
+            И по умолчанию каждый элемент в гриде позиционируется в одну ячейку по порядку. Но мы можем более точно настроить расположение элемента в гриде с помощью ряда свойств:
+            <li class="description">grid-row-start: задает начальную горизонтальную grid-линию, с которой начинается элемент</li>
+            <li class="description">grid-row-end: указывает, до какой горизонтальной grid-линии надо растягивать элемент</li>
+            <li class="description">grid-column-start: задает начальную вертикальную grid-линию, от которой начинается элемент</li>
+            <li class="description">grid-column-end: указывает, до какой вертикальной grid-линии нужно растягивать элемент</li>
+            <li class="description">grid-column и grid-row: указывают, начало и конец элемента по осям</li>
+            <li class="description">grid-area: указывает, начало и конец элемента по осям</li>
+        </ul>
+    </ul>
+    <div class="grid" style="grid-template-columns: repeat(2, 80px); grid-template-rows: repeat(4, 80px); gap: 20px">
+        <div class="container_1 width" style="grid-column: 1 / 3"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1 width" style="grid-area: 3 / 1 / 5 / 3; height: 100%"></div>
+        <div class="container_1"></div>
+    </div>
+
+    <hr>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, 80px); grid-template-rows: repeat(2, 80px); gap: 20px">
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+        <div class="container_1"></div>
+    </div>
 </body>
 </html>

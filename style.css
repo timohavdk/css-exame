@@ -142,7 +142,8 @@ body {
 .container_1 {
 	height: 75px;
 	width: 75px;
-	background-color: darkred;
+	background-color: darkkhaki;
+    border: 2px solid darkred;
 }
 
 .container_2 {
@@ -159,4 +160,12 @@ body {
 
 img {
 	width: 300px;
+}
+
+.grid {
+    display: grid;
+}
+
+.width {
+    width: 100%;
 }
